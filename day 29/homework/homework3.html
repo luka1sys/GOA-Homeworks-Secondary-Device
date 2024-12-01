@@ -1,0 +1,60 @@
+<!-- შექმენით Multi page website-ი გოაზე. საიტზე უნდა გქონდეთ რეგისტრაციის გვერდი, სადაც მომხარებელს შემოატანინებთ 
+ სახელს, გვარს, ემაილს, პაროლს, გენდერს და ასევე გექნებათ drop down menu(ჩამოსაშლელი მენიუ),
+  რომელშიც მომხარებელი აირჩევს სასურველ speed-ს(გაკვეთილების რაოდენობა კვირაში).
+   თითოეული input-ის შეყვანა/მონიშვნა/არჩევა უნდა იყოს აუცილებელი.
+
+საიტზე უნდა გქონდეთ მთავარი გვერდი, რომელზეც გადახვალთ დარეგისტრირებისას(მოიძიეთ ეს. 
+"ღილაკზე დაჭერისას როგორ შეიძლება გადასვლა სხვა გვერდზე"). მთავარი გვერდი უნდა იყოს content-ით სავსე.
+ ჩასვით ფოტოები და ისაუბრეთ გოაზე, რატომ ღირს ჩვენთან შემოსვლა, როგორი გარემოა, რატომ აირჩიეთ გოა და რაში დაგეხმარათ ის.
+  რა შეიცვალა თქვენს ცხოვრებაში გოაში შემოსვლით. ასევე დაამატეთ სანავიგაციო მენიუ, რომლითაც ყველა გვერდს დააკავშირებთ ერთმანეთთან.
+
+გამოიყენეთ ყველა ნასწავლი მასალა. მაგალითად ტექსტის ფორმატირების თეგები, სიები, სათაურები და ა.შ
+
+დაყავით საიტი სექციებად -->
+
+<html>
+    
+ <head>
+     
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title></title>
+ 
+ </head>
+ 
+ <body>
+     <form>
+         <label for="name" >enter firs name </label>
+         
+         <br><input type="first name" name="firstname" required/><br>
+
+         
+         <label for="last name">enter your last name </label>
+         <br><input id="last name " type="last name"  name="lastname" required> <br>
+         
+        <br/><label for="emaill">enter email</label>
+         <br><input  id= "emaill" type=" email" name="mobile number and email" required/><br>
+        
+         <label for="pass">enter pass</label>
+         <br><input  id="pass"  type="password"  name="pass" required/><br>
+        <select name="country">
+            <option value="sp1">speed 1</option>
+            <option value="sp2">speed 2</option>
+            <option value="sp3">speed 3</option>
+            <option value="sp4">speed 4</option>
+        </select>
+            <input type="radio" id="female" value="female" name="gender">
+
+          <lobel for="female">female</lobel>
+
+          <input type="radio" id="male" value="male" name="gender">
+
+            <lobel for="male">male</lobel> 
+            <a href="second_page.html">
+              <button>submit</button>
+            
+     </form>
+ 
+  </body>
+ 
+ </html>

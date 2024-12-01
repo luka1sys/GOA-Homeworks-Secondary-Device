@@ -1,0 +1,44 @@
+<!--  შექმენით ვებგვერდი რომელზეც დაამატებთ თქვენთვის სასურველ ვიდეოს და აუდიოს, 
+  ორივეს მინიმუმ 3 განსხვავებული ფორომატი, დაამატეთ ნასწავლი მართვის ფუნქციები
+   (autoplay, loop, muted) თითოეული ახსენით კომენტარებით. შეასრულეთ იგივე მაგრამ გამოიყენეთ არასწორი გზა, 
+   ერთ მედია თეგში რამდენიმე source თეგის ნაცვლად აიღეთ რამდენიმე მედია თეგი და დაუწერეთ src ატრიბუტი.
+    დაწერეთ განსხვავება, მიუთითეთ რომელია სწორი გზა და რატომ -->
+    <html>
+        <head>
+        
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+       <!-- სწორი გზა  -->
+            <video controls  autoplay loop muted width="400px" >
+            <source src="Automate Your Video Editing with Python.mp4"  type="video/mp4">
+            <source src="Automate Your Video Editing with Python.web"  type="video/web">
+            <source src="Automate Your Video Editing with Python.ogg"  type="video/ogg">  
+        </video>
+
+        <audio controls >
+            <source src="Automate Your Video Editing with Python.mp4" type="video/mp4">
+            <source src="Automate Your Video Editing with Python.ogg" type="video/ogg">
+            <source src="Automate Your Video Editing with Python.WAV" type="video/ WAV">
+            
+        <!-- არასწორი გზა  -->
+        <video src="Automate Your Video Editing with Python.mp4"></video>
+        <video src="Automate Your Video Editing with Python.mp4"></video>
+        <video src="Automate Your Video Editing with Python.mp4"></video>
+
+        <audio src="Automate Your Video Editing with Python.mp4"></video>
+        <audio src="Automate Your Video Editing with Python.mp4"></video>
+        <audio src="Automate Your Video Editing with Python.mp4"></video>
+
+    
+        </audio>
+        </body>
+        </html>
+        <!-- autoplay- ვიყენებთ რომ თავისით დაიწყოს აუდიო/ვიდეო დაკვრა  -->
+        <!-- loop-თავიდან დაიწყოს ვიდეოს/აუდიოს დაკვრა  -->
+        <!-- muted-ვიყენებთ რომ გავუთიშოთ ხმა  -->

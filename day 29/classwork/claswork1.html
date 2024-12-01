@@ -1,0 +1,63 @@
+<!--1) შექმენით სარეგისტრაციო ფორმა. მომხარებელს შემოატანინეთ ემაილი, პაროლი და სახელი.
+ თითოეულ input-ს უნდა ჰქონდეს type, name, id, placeholder, required ატრიბუტები. გამოიყენეთ <label> თეგი და მასში for ატრიბუტი.
+გამოიყენეთ <br> თეგი.
+
+კომენტარებით ახსენით თითოეული ატრიბუტის დანიშნულება
+ (edited)
+
+2) შექმნილ სარეგისტრაციო ფორმას დაამატეთ არჩევანი, რომ მომხარებელს შეეძლოს საცხოვრებელი ქალაქის არჩევა.(მინიმუმ 5 ქალაქი)
+3) დაამატეთ თქვენს სარეგისტრაციო ფორმაში გენდერის არჩევანი. მომხარებელს მხოლოდ ერთის არჩევა უნდა შეეძლოს  -->
+
+
+ 
+ <html>
+    
+ <head>
+     
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title></title>
+ 
+ </head>
+ 
+ <body>
+     <form>
+         <label for="name" >enter firs name </label>  
+         
+         <br><input tipe="first name" placeholder="please enter your firstname" name="firstname" required/><br>
+         
+        <label for="emaill">enter email</label>
+         <br><input  id= "emaill" tipe=" email" placeholder="enter mobile number or email" name="mobile number and email" required/><br>
+        
+         <label for="pass">enter pass</label>
+         <br><input  id="pass"  tipe="password" placeholder="please enter your new password" name="pass" required/><br>
+        <select name="country">
+            <option value="tb">tbilisi</option>
+            <option value="qt">qutaisi</option>
+            <option value="zu">zugdidi</option>
+            <option value="tl">telavi</option>
+            <option value="ax">axalcixe</option>
+        
+            <input type="radio" id="female" value="female" name="gender">
+
+          <lobel for="female">female</lobel>
+
+          <input type="radio" id="male" value="male" name="gender" >
+
+            <lobel for="male">male</lobel>
+         <br><button>submoit</button><br/>
+
+
+
+
+        </select>
+     </form>
+ 
+ </body>
+ 
+ </html>
+ <!-- id -ს ვიყენებთ რომ მივუთითოთ მისამართი labelს შექმნისაას თუ რომელ ინფუთს დაუკავშირდეს  -->
+  <!-- label- ს ვიყენებთ რომ დავაწეროთ თუ რა უნდა შეიყვანოს მომხმარებელმა   -->
+   <!-- name-ს ვიყენებთ რომ მივუთითოთ თუ სად უნდა შეინახოს ინფორმაცია  -->
+    <!--reqired - ს ვიყენებთ რომ საჭირო იყს ველის შევსება   -->
+    <!-- placeholder ს ვიყენებთ რომ მივუთითოთ თუ რა უნდა ჩაწეროს მომხმარებელმა ველში  -->
