@@ -1,0 +1,22 @@
+table{
+    display: inline;
+   
+}
+body{
+    background-color: F5EFFF;
+}
+button{
+    background-color:A7D477 ;
+}
+header{ 
+    background-color:A59D84;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: 543A14;
+    background-color: rgb(174, 116, 46);
+}
+img{
+    display: inline;
+}

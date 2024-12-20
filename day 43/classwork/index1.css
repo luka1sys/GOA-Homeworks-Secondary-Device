@@ -1,0 +1,9 @@
+#unique1,#unique3{
+    color:red;
+} 
+#unique2,#unique4{
+    color:green;
+}
+main{
+    background-color: aqua;
+}
