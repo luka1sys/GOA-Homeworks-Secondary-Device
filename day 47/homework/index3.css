@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:line-through;
+    text-decoration-color: black;
+    text-decoration-style: dotted;
+    color: yellow;
+}
+a:active{
+    text-decoration:line-through;
+    text-decoration-color: yellow;
+    text-decoration-style: dotted;
+    color:black;
+}
