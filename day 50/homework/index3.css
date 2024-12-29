@@ -1,0 +1,17 @@
+table{
+    border-collapse:collapse;
+    border-bottom: 2px solid rgb(10, 136, 136);
+    width:30%;
+    height:20%;
+}
+th{
+    background-color:rgb(10, 136, 136);
+    color:white;
+}
+.class123{
+    color: rgb(10, 136, 136);
+    background-color: rgb(236, 236, 236);
+}
+td,th{
+    text-align: center;
+}

@@ -1,0 +1,7 @@
+thead,.class123{
+    background-color: orange;
+}
+table,th,td{
+    border: 2px solid green;
+    border-width: 2px;
+}
