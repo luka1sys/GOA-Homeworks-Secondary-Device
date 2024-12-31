@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+    width: 40%;
+    height: 40%;
+    color: gray;
+}
+
+
+tr:nth-child(odd){
+    background-color: rgb(218, 221, 221);
+}
+.class123{
+    background-color: black;
+    color:gray
+}
+body {
+    
+    text-align: center;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}

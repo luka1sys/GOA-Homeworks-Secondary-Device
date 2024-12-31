@@ -1,0 +1,10 @@
+ul{
+    text-align: center;
+    list-style-position: inside;
+}
+:nth-child(3):hover{
+    background-color: black;
+}
+li:hover{
+    color: red;
+}

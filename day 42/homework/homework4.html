@@ -29,13 +29,51 @@
         text-decoration: underline;
         color: rgb(60, 114, 153);
     }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .background {
+      width: 100%;
+      height: 100vh; /* ეკრანის მთლიანი სიმაღლე */
+      background-image: url("https://ამინდი.com/img/simple_clouds.jpg"); /* ჩასვი სურათის მისამართი */
+      background-size: cover; /* სურათის გაშლა, რომ მოერგოს კონტეინერს */
+      background-position: center; /* სურათის ცენტრში პოზიციონირება */
+      background-repeat: no-repeat; /* სურათის განმეორების გაუქმება */
+    }
+#unique1{
+     background-color:rgb(113, 165, 224);
+}
+#unique2{
+    color: rgb(10, 133, 163);
+    font-weight: 900;
+}
+
+
+
 </style>
-    
+
 </head>
 
 <body>
-        <h1>ამინდი მარტვილი</h1>
-     <table  border="1">
+    <table border="1" >  
+         <tr>
+            <td id="unique2">ამინდი<br id =unique3>სააქართველო</td>
+         </tr>
+         
+        <tr>
+                <td><img src="https://ამინდი.com/img/simple_clouds.jpg" height="250px"></td>
+            </tr>
+            <tr>
+                <td id="unique1">ამინდი</td>
+                
+         </tr>
+        </tbody>
+
+    </table>
+    <table  border="1">
         <thead>
             <tr>
                 <th colspan="2"></th>

@@ -1,0 +1,10 @@
+ul{ 
+    list-style-image: url();
+    list-style-type: disc;
+    list-style-type:square;
+}
+ol{
+    list-style-image: url();
+    list-style-type: disc;
+    list-style-type:square;
+}
