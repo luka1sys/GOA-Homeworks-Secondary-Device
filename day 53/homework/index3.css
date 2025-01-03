@@ -1,0 +1,35 @@
+body{
+    background-color: green;
+}
+form{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin-top:40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+#unique1{
+    height:80px;
+    padding-bottom: 50px;
+}
+    
+}
+h1{
+    padding-right: 130px;
+    font-weight:200;
+    color:gray
+}
+input{
+    margin-top: 20px;
+    width:80%;
+    height: 40px;
+    padding-left: 10px;
+}
+button{
+    width: 80%;
+    height: 35px;
+    margin-top: 30px;
+    background-color: green;
+    color: white;
+}

@@ -1,0 +1,37 @@
+form{
+    width:400px;
+    height:220px;
+    background-color: rgb(131, 186, 235);
+    text-align:center;
+    padding-top:0px;
+
+}
+h1{
+    margin-top:0px;
+    margin-bottom: 20px;
+    font-size: 30x;
+}
+input{
+    width:70%;
+    height: 30;
+    padding-left:10px;
+    border:none;
+    border-radius: 5px;
+    font-size:15px;
+    margin-bottom:20px;
+}
+button{
+    background-color: blue;
+    color: white;
+    width: 70%;
+    height: 12%;
+    border-radius: 5px;
+    
+}
+input:hover{
+    outline: 2px solid black;
+}
+button:hover{
+    background-color: azure;
+    color:black
+}
