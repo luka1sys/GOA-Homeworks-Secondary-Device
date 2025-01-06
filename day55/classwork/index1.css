@@ -1,0 +1,16 @@
+#parent{
+    border:3px solid gray;
+    width:500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+}
+.child{
+    width:20%;
+    height:20%;
+    border: 3px solid black;
+    
+}
