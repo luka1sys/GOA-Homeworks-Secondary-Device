@@ -1,0 +1,88 @@
+
+main{
+    border: 2px solid rgb(255, 255, 255);
+    width: 1250px;
+    height: 645px;
+
+}
+#section1{
+    border:2px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content:space-around;
+}
+
+#unique1{
+    border:2px solid rgb(255, 255, 255);
+    width:20%;
+    height: 80%;
+    background-color: blue;
+}
+#unique2{
+    border:2px solid rgb(255, 255, 255);
+    width:20%;
+    height: 80%;
+    background-color: orange;
+}
+#unique3{
+    border:2px solid rgb(255, 255, 255);
+    width:20%;
+    height: 80%;
+    background-color: red;
+}
+#unique4{
+    border:2px solid rgb(255, 255, 255);
+    width:20%;
+    height: 80%;
+    background-color: gray;
+}
+#section2{
+    border:2px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+
+}
+#unique5{
+    border:2px solid rgb(255, 255, 255);
+    width:20%;
+    height: 80%;
+    background-color: blue;
+
+}
+#unique6{
+    border:2px solid rgb(255, 255, 255);
+    width:20%;
+    height: 80%;
+    background-color: orange;
+
+}
+#unique7{
+    border:2px solid rgb(255, 255, 255);
+    width:20%;
+    height: 80%;
+    background-color: red;
+
+}
+#unique8{
+    border:2px solid rgb(255, 255, 255);
+    width:20%;
+    height: 80%;
+    background-color: gray;
+
+
+}
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+.white1{
+    color: white;
+}
+.black{
+    color: black;
+}

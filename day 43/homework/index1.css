@@ -3,20 +3,27 @@ table{
    
 }
 body{
-    background-color: F5EFFF;
+    background-image: url(https://thumbs.dreamstime.com/b/hunting-accessories-dark-background-tactical-equipment-hunting-tactical-background-concept-hunting-hunting-accessories-172590210.jpg);
+    background-size: cover;
+    width: 1200px;
 }
 button{
     background-color:A7D477 ;
 }
 header{ 
-    background-color:A59D84;
+    background-color:rgb(0, 0, 0);
     text-align: center;
+    color: white;
 }
 h2{
     text-align: center;
-    color: 543A14;
-    background-color: rgb(174, 116, 46);
+    color: white;
+    background-color: rgb(0, 0, 0);
 }
 img{
     display: inline;
+}
+p{
+    background-color: black;
+    color:white
 }
