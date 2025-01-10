@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+main {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    border: 5px solid black;
+
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+}
+#red{
+    order: calc(3);
+}
+#green{
+    order: calc(0);
+    align-self:center ;
+}
+
+#yellow{
+    order: calc(1);
+}
+#blue{
+    order: calc(4);
+}   
