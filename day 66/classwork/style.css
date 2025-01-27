@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+}
+main{
+    background-color: blue;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    position: relative;
+    flex-wrap:wrap ;
+}
+div{
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    border:2px solid red;
+}
+
+#unique{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+    background-color: blue;
+}

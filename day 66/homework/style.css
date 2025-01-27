@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    position: relative;
+    background-color: blanchedalmond;
+    height: 80%;
+    width: 70%;
+    border: 2px solid  black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#star{
+    position: absolute;
+    left: 2px;
+
+}
+div{
+    border: 2px solid black;
+    height: 50%;
+    width: 30%;
+    
+    background-color: rgb(120, 73, 16);
+
+}
+#divend{
+    background-color: brown;
+    position: absolute;
+    width: 15%;
+    height: 20%;
+    left: 300px;
+}
