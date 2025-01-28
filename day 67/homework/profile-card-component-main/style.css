@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+main{
+    background-color: antiquewhite;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 222, 222)
+}
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.card-header {
+    background: #00b4d8;
+    height: 90px;
+}
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: -40px;
+}
+.card-body {
+    padding: 20px;
+}
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+.location {
+    color: gray;
+    font-size: 14px;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+.stats div {
+    text-align: center;
+}
+.stats div p {
+    margin: 5px ;
+    font-weight: bold;
+}
+.pp{
+    font-size: 13px;
+    color: gray;
+    font-weight: 100;
+}
+
