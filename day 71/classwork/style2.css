@@ -1,0 +1,75 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+
+}
+#section1{
+    position: relative;
+    border: 1px solid black;
+    width: 100%;
+    height: 50%;
+    background-image:url(https://media.drive.com.au/obj/tx_q:70,rs:auto:1200:675:1/driveau/upload/cms/uploads/bi36meqa62rhbghgdrkh);
+    background-size: cover;
+    background-position: center;
+
+}
+#section2{
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+
+}
+#divv{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#section2 p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 100px;
+
+}
+#section2 img{
+    
+    width: 30px;
+    height: 30px;
+}
+button{
+
+    position: absolute;
+    bottom: 20px;
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    color: white;
+    font-weight: 800;
+}
+button p{
+    color: white;
+    font-weight: 800;
+}
+#div_img{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 5px;
+    width:100%;
+    height: 60px;
+}

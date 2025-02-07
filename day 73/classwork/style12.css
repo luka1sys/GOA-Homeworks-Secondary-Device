@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas:
+        "header header menu"
+        "hero hero hero"
+        "main image extra"
+        "banner banner banner";
+    height: 100vh;
+    gap: 5px;
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    background: #0B0E17;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    grid-area: menu;
+    background: #E74C3C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    grid-area: hero;
+    background: #4A90E2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    grid-area: main;
+    background: #1E2A3A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    grid-area: image;
+    background: #C1E0F0;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extra {
+    grid-area: extra;
+    background: #2ECC71;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    grid-area: banner;
+    background: #F1C40F;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
