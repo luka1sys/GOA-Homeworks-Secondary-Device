@@ -1,0 +1,23 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    
+}
+div:hover{
+    transform: scale(1.5) rotate(360deg) ;
+    transition: 1s;
+    background-color: brown;
+
+}

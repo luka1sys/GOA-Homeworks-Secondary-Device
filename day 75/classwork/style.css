@@ -1,0 +1,20 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    
+    transition: 0.5;
+    background-color: black;
+}
+div:hover{
+    transform: translateY(-10px) rotate(360deg);
+
+}

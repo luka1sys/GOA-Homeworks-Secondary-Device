@@ -15,12 +15,13 @@ body {
 }
 
 main {
+    border: 5px solid black;
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:6px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
     width: 70%;
     height: 90%;
-    border: 5px solid black;
+    
 
 }
 
