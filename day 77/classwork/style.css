@@ -1,0 +1,52 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#parent{
+    border: 1px solid black;
+    width: 1000px;
+    height: 50px;
+}
+#child{
+    width: 0%;
+    height: 100%;
+    background-color: blueviolet;
+    animation-name:  luksona;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    
+
+
+}
+@keyframes luksona {
+    0%{
+        width: 0%;
+        background-color: white;
+    }
+    30%{
+        background-color: aqua;
+
+    }
+    50%{
+        background-color: aquamarine;
+
+    }
+    70%{
+        background-color: brown;
+    }
+    100%{
+        width: 100%;
+        background-color: blueviolet;
+    }
+}
+
+#child:hover b{
+    font-size: 30px;
+
+}
+b{
+    margin-top: 20px;
+}

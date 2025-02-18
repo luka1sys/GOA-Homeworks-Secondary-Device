@@ -1,0 +1,173 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 232, 240);
+
+}
+main{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 20px;
+    background-color: rgb(225, 232, 240);
+
+}
+div{
+
+    border-radius: 7px;
+}
+#d1{
+    background-color: rgb(115, 63, 200);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 1px solid black;
+}
+#d2{
+    padding-left: 20px;
+    background-color: rgb(73, 85, 107);
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 2;
+
+}
+#d3{
+    background-color:#ffffff;
+    grid-column-start: 4;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end: 3;
+    padding-left: 20px;
+}
+#d4{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end:1;
+    grid-row-start:2;
+    grid-row-end: 2;
+    padding-left: 20px;
+
+}
+#d5{
+    background-color: rgb(0, 0, 0);
+    grid-column-start: 2;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end: 2;
+    padding-left: 20px;
+}
+#div1_ch{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+}
+#d1{
+    padding-left: 20px;
+
+}
+#div1_ch img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+
+}
+#div1_ch {
+    font-size: 12px;
+    color:white;
+}
+p{
+    font-size: 12px;
+    color:white;
+
+
+}
+h2{
+    color: white;
+    font-size: 20px;
+}
+#d2_ch{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+#d2_ch img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+
+}
+#d3_ch{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+#d3_ch img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+
+}
+#d3_ch p{
+    color: rgb(255, 63, 63);
+}
+#d3 p{
+    color: rgb(84, 84, 84);
+}
+#d3 h2{
+    color: rgb(84, 84, 84)
+
+}
+#d4_ch{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#d4_ch img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+
+}
+#d4 h2{
+    color: rgb(67, 67, 67);
+}
+#d4 p{
+    color: rgb(62, 62, 62);
+}
+#d5_ch{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#d5_ch img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+
+}
+@media screen and (max-width:800px){
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+}
+
+
+
+
+
+
+
+

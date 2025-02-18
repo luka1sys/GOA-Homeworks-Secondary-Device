@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a9d1d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 20px;
+}
+h2{
+    color: rgb(0, 137, 139);
+}
+
+.left-panel,
+.right-panel {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-panel {
+    background: #f5f5f5;
+    flex: 1;
+}
+
+.right-panel {
+    background: #004e51;
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.divv{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    gap:50px;
+
+}
+.divv p{
+font-size:15px;
+
+}
+.divv  b{
+font-size: 7px;
+
+}
+
+.tip-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tip-buttons button {
+    flex: 1;
+    background: #004d40;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tip-buttons button:hover {
+    background: #00796b;
+}
+
+.reset-btn {
+    font-weight: 600;
+    color: rgb(66, 77, 72);
+    background: rgb(2, 100, 107);
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#unique {
+    flex: 1;
+    background: #dae6e3;
+    color: rgb(4, 86, 72);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+@media screen and (max-width:915px){
+    .container{
+        height:1000px ;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .left-panel{
+        height: 100px;
+
+    }
+
+}
