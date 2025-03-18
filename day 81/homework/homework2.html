@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const me = {
+            name: "luka",
+            surname: "dgebuadze",
+            age: 16,
+            Greetings: function(){
+                console.log("Hello World");
+            }
+        }
+        const my_sister = {
+            name: "tekla",
+            surname: "dgebuadze",
+            age: 20,
+            Greetings: function(){
+                console.log("Hello World");
+            }
+
+        }
+        console.log(me)
+        console.log(my_sister)
+        console.log(me.name, me.surname, me.age);
+        console.log(my_sister.name, my_sister.surname, my_sister.age);
+        me.name="saba";
+        my_sister.age="18";
+        console.log(me);
+        console.log(my_sister);
+        me.hob="hunting";
+        my_sister.hob="listening to music";
+        console.log(me);
+        console.log(my_sister);
+        delete me.hob;
+        delete my_sister.hob;
+        console.log(me);
+        console.log(my_sister)
+        me.Greetings();
+        my_sister.Greetings();
+    </script>
+
+</body>
+
+</html>

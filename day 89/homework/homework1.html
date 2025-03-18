@@ -1,0 +1,30 @@
+<!-- scope არის ჯავასკრიპტში ცვლადებისა და ფუნქციების გამოყოფილი სივრცე რომელიც განსაზღვრავს ცვლადებზე3და ფუნქციებზე 
+ რომელ სივრცეში შეგვიძლია წვდომა  -->
+<!-- ჯავასკრიპტში არსებოსბ ორი scope ტიპი :global scope და local scope -->
+<!-- global scope არისა როცა ცვლადი ხელმისაწვდომია ფუნქციის ბლოკის გარეთაც 
+   local scope არის როცა ცვლადი მარტო ფუნქციის ბლოკის შიგნითაა ხელმისაწვდომი -->
+
+
+
+
+<script>
+    // glbal scope 
+    let name = "luka";
+
+    function myFunction() {
+        console.log(name);
+    }
+
+    myFunction();
+    console.log(name);
+
+    // local scope
+    function mysurname() {
+        let surname = "dgebuadze"; 
+        console.log(surname); 
+    }
+
+    mysurname();
+
+    console.log(surname);
+</script>

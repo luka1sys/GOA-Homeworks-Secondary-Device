@@ -1,0 +1,32 @@
+<!-- შექმენით თამაში js-ის გამოყენებით:
+
+თქვენი დაწერილი კოდი ქმნის შემთხვევით 
+რიცხვს 1-დან 10-ის ჩათვლით. მომხარებელს მიეცით საშუალება შემოიტანოს რიცხვი.
+
+შეამოწმეთ, თუ მომხარებელის შემოტანილი რიცხვი დაემთხვა რანდომულ რიცხვს. 
+კონსოლში გამოიტანეთ "You win", სხვა შემთხვევაში "You lose" -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const r_number = Math.floor(Math.random() * 10) + 1;
+        const input = parseInt(prompt("Please enter number:"));
+        if (input === r_number) {
+            console.log("You win");
+        }
+        else {
+            console.log("You lose");
+        }
+
+    </script>
+
+</body>
+
+</html>

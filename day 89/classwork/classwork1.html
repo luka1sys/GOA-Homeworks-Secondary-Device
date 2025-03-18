@@ -1,0 +1,35 @@
+#შექმენით arrow ფუნქცია რომელსაც გადაცემთ 2 არგუმენტს, სახელი და ასაკი,
+სახელი და ასაკი მომხმარებელმა უნდა შემოიტანოს prompt ის მეშვეობით,
+შემდეგ ფუყნქციააში უნდა მოხდეს ასაკის შემოწმება თუ მომხმარებელის ასაკი >= 18 დააბრუნეთ რომ
+"ლუკა შენ შეგიძლია შესვლა შენობაში" სხვა შემთხვაში კი დააბრუნეთ რომ მომხმარებელს არ შეუძლია
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const name = prompt("enter your name: ");
+        const age = prompt("enter your age: ");
+        const x = (name, age) => {
+            if (age >= 18) {
+                return "ლუკა შენ შეგიძლია შესვლა შენობაში"
+            }
+            else {
+                return "შენ არ შეგიძლია შესვლა "
+            }
+            console.log(x(name, number(age)))
+
+        }
+        
+
+
+    </script>
+
+    </bod

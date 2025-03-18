@@ -1,0 +1,41 @@
+<!-- დაწერე ფუნქცია temperatureStatus, რომელიც იღებს ტემპერატურას და აბრუნებს სტრინგს:
+
+"Very cold" თუ ტემპერატურა ნაკლებია -10 გრადუსზე.
+"Cold" თუ ტემპერატურა არის -10-დან 0 გრადუსამდე (ჩათვლით).
+"Normal" თუ ტემპერატურა არის 0-დან 20 გრადუსამდე (ჩათვლით).
+"Warm" თუ ტემპერატურა არის 20-დან 30 გრადუსამდე (ჩათვლით).
+"Hot" თუ ტემპერატურა აღემატება 30 გრადუსს.
+თუ ტემპერატურა არ არის მიწოდებული, ჩაითვალოს, რომ ის არის 20 გრადუსი. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function temperature(x){
+            if (x<-10){
+                return "Very cold"
+            }
+            if (x>-10 && x<0){
+                return "Cold"
+            }
+            if (x>0 && x<20){
+                return "Normal"
+            }
+            if (x>20 && x<30){
+                return "Warm"
+            }
+            if (x>30){
+                return "Hot"
+            }
+
+        }
+        console.log(temperature(10))
+    </script>
+
+    
+</body>
+</html>

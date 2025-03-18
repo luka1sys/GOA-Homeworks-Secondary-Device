@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcurator(x,y,operator){
+            if(operator==="+"){
+                return x+y;
+            }
+            if (operator==="-"){
+                return x-y
+            }
+            if (operator=== "/" ){
+                if (y===0){
+                    return "Error: division by zero"
+                }
+                return x/y 
+
+            }
+            if (operator === "*"){
+                return x*y
+            }
+            else{
+                return  "Invalid operation"
+            }
+        }
+        console.log(calcurator(3,5,"-"))
+    </script>
+    
+</body>
+</html>
