@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const humans = [
+            { name: "Alice", age: 15 },
+            { name: "Bob", age: 17 },
+            { name: "Charlie", age: 12 },
+            { name: "David", age: 14 },
+            { name: "Emma", age: 16 },
+            { name: "Frank", age: 25 },
+            { name: "Grace", age: 30 },
+            { name: "Hannah", age: 27 },
+            { name: "Ian", age: 45 },
+            { name: "Jack", age: 38 }
+        ];
+
+
+        const manualFilter = (arr, checker) => {
+            const filteredArr = [];
+
+            for (let i = 0; i < arr.length; i++) {
+                if (checker(arr[i])) {
+                    filteredArr.push(arr[i]);
+                }
+            }
+
+            return filteredArr;
+        }
+
+
+        const result = manualFilter(humans, function (human) {
+            return human.age < 18;
+        });
+    </script>
+
+</body>
+
+</html>
