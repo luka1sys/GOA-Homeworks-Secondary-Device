@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const manualReduce = (arr, callback, startingValue) => {
+            let accumulator = startingValue == undefined ? arr[0] : startingValue;
+
+            for (let i = startingValue == undefined ? 1 : 0; i < arr.length; i++) {
+                accumulator = callback(accumulator, arr[i]);
+            }
+
+            return accumulator;
+        }
+    </script>
+
+</body>
+
+</html>
