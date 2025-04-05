@@ -1,0 +1,30 @@
+<!-- მომხმარებელს prompt-ის მეშვეობით
+  შემოატანინეთ 5 საყვარელი ფილმის სახელი და გამოიტანეთ ის დალაგებული სიის სახით საიტზე -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<ჰ2>
+
+    <body>
+        <script>
+            let movie1 = prompt("enter your favorite movie: ")
+            let movie2 = prompt("enter your favorite movie: ")
+            let movie3 = prompt("enter your favorite movie: ")
+            let movie4 = prompt("enter your favorite movie: ")
+            let movie5 = prompt("enter your favorite movie: ")
+            let movie = [];
+            movie.push(movie1, movie2, movie3, movie4, movie5);
+            console.log("თქვენი საყვარელი ფილმების დალაგებული სია:");
+            for (let i = 0; i < movie.length; i++) {
+                console.log(`${i + 1}. ${movie[i]}`);
+            }
+
+        </script>
+    </body>
+
+</html>

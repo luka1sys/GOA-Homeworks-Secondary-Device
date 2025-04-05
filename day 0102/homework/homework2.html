@@ -1,0 +1,35 @@
+<!-- შექმენით 5 პარაგრაფი. მიიღეთ მათზე წვდომა თეგის სახელით.
+  გადაუარეთ მიღებულ html-ის კოლექციას for ციკლით და დაუმატეთ თითოეულ პარაგრაფს ღილაკი "Delete",
+   რომელზე დაკლიკებისას პარაგრაფი უნდა წაიშალოს -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>paraghrap1</p>
+    <p>parghrap2</p>
+    <p>paraghrap3</p>
+    <p>paraghrap4</p>
+    <p>paraghrap5</p>
+    <script>
+        let paraghrap = document.getElementsByTagName("p")
+        for (let i = 0; i < paraghrap.length; i++) {
+            let button = document.createElement("button");
+            button.textContent = "delete";
+            button.onclick = function () {
+                paraghrap[i].remove();
+            };
+            paraghrap[i].appendChild(button);
+        }
+
+
+    </script>
+
+</body>
+
+</html>

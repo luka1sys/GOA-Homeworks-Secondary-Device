@@ -1,0 +1,25 @@
+<!-- შექმენით ფუნქცია სახელად manualMapObj რომელსაც გადაეცემა ობიექტი 
+ და callback ფუნქცია, გამოიყენეთ for in ციკლი რომ იტერაცია მოახდინოთ 
+ ობიექტზე, შემდეგ თითოეულ გასაღებზე მდგომი მნიშვნელობა გადაეცით  callback ფუნქციას და დაბრუნებული 
+ მნიშვნელობა შეინახეთ ახალ ობიექტში იგივე გასაღებით (აგრეთვე ახსენით რა არის  pass by refernce) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function manualMapObj(object, callback) {
+            let newObject = {}
+            for (let key in obj) {
+                newObject=callback(object[key], key, object);
+            }
+            return newObject;
+        }
+    </script>
+</body>
+</html>

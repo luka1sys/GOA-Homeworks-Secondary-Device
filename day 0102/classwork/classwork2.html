@@ -1,0 +1,32 @@
+<!-- შექმენით 5 html-ის ელემენტი, გაუწერეთ მათ ერთი და იგივე კლასი, წამოიღეთ ისინი getElementsByClassName
+  მეთოდით და დაბეჭდეთ თითოეული მათგანი.(შეგიძლიათ გადაურაოთ for ციკლით) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <P class="pp">P1</P>
+    <P class="pp">P2</P>
+    <P class="pp">P3</P>
+    <P class="pp">P4</P>
+    <P class="pp">P5</P>
+    <script>
+
+        let paragraph=document.getElementsByClassName("pp");
+        let list1=[]
+        for(let i=0;i<paragraph.length;i++){
+            list1.push(paragraph[i].innerText);
+            
+        };
+        for(let l=0;l<list1.length;l++){
+            console.log(list1[l])
+        }
+        
+    </script>
+</body>
+
+</html>

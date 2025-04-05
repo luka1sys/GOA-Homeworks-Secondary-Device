@@ -1,0 +1,29 @@
+<!--  შექმენით საიტზე ერთი ღილაკი, რომელზე დაკლიკებისას მომხმარებელს
+   prompt-ის საშუალებით შემოატანინებთ 2 რიცხვს და გამოიტანთ მათ ჯამს საიტზე შემდეგი სახით
+{პირველი რიცხვი} + {მეორე რიცხვი} = {პასუხი} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>bt</button>
+    <p>result:</p>
+
+
+    <script>
+        document.getElementsByTagName("button")[0].onclick = function () {
+            let num1 = Number(prompt("შეიყვანეთ პირველი რიცხვი"));
+            let num2 = Number(prompt("შეიყვანეთ მეორე რიცხვი"));
+            let sum = num1 + num2;
+            document.getElementsByTagName("p")[0].textContent = `${num1}+${num2}=${sum}`;
+        };
+    </script>
+
+</body>
+
+</html>

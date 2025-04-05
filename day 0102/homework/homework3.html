@@ -1,0 +1,27 @@
+<!-- შექმენით 3 ელემენტი თქვენთვის სასურველი კლასით. მიიღეთ მათზე
+  წვდომა getElementsByClassName-მეთოდის მეშვეობით და შეუცვალეთ ტექსტის შიგთავსი მე-2 ელემენტს. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="sp">football</p>
+    <p class="sp">basketball</p>
+    <p class="sp">tenis</p>
+
+
+    <script>
+        let sport=document.getElementsByClassName("sp");
+        sport[1].textContent="basketball the best"
+        
+
+    </script>
+
+</body>
+
+</html>

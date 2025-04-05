@@ -1,0 +1,24 @@
+<!--  შექმენით 5 პარაგრაფი, წამოიღეთ ისინი
+   getElementsByTagName მეთოდით და შეუცვალეთ თითოეულ პარაგრაფს ტექსტის შიგთავსი. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>luka</p>
+    <p>nika</p>
+    <p>saba</p>
+    <p>gio</p>
+    <p>aleqsi</p>
+    <script>
+        let paragraph=document.getElementsByTagName("p");
+        for(let i=0; i<paragraph.length;i++){
+            paragraph[i].textContent="luka"
+            console.log(paragraph[i].textContent)
+        }
+    </script>
+</body>
+</html>

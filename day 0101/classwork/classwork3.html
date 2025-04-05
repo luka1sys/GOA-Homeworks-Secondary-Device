@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const people = [
+            { name: "Alice", age: 30, occupation: "Engineer" },
+            { name: "Bob", age: 25, occupation: "Designer" },
+            { name: "Charlie", age: 35, occupation: "Teacher" },
+            { name: "David", age: 28, occupation: "Developer" },
+            { name: "Eva", age: 32, occupation: "Manager" }
+        ];
+        const filteredPeopleArray = people.filter(curValue => curValue.age >= 30);
+        console.log(filteredPeopleArray);
+    </script>
+
+</body>
+
+</html>
