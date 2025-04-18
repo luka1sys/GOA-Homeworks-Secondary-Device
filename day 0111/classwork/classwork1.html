@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Carousel</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="carousel">
+    <img id="carouselImage" src="" alt="სურათი">
+  </div>
+
+  <button onclick="Previous()">Previous</button>
+  <button onclick="Next()">Next</button>
+
+  <script>
+    const images = [
+      "https://picsum.photos/id/1015/300/200",
+      "https://picsum.photos/id/1020/300/200",
+      "https://picsum.photos/id/1024/300/200",
+      "https://picsum.photos/id/1035/300/200"
+    ];
+    let index = 0;
+    const img = document.getElementById("carouselImage");
+    img.src = images[index];
+    function Next() {
+      index++;
+      if (index >= images.length) {
+        index = 0; 
+      }
+      img.src = images[index];
+    }
+    function Previous() {
+      index--;
+      if (index < 0) {
+        index = images.length - 1; 
+      }
+      img.src = images[index];
+    }
+  </script>
+
+</body>
+</html>

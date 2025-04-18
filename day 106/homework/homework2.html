@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+</head>
+
+<body>
+    <!-- ღილაკი პროდუქტის დასამატებლად -->
+    <button onclick="prompt_()">Add Product</button>
+
+    <!-- ღილაკი პროდუქტის ID-ით წასაშლელად -->
+    <button onclick="deleteProduct()">Delete by ID</button>
+
+    <!-- ცხრილი -->
+    <table id="productTable" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>პროდუქტის სახელი</th>
+                <th>რაოდენობა</th>
+                <th>ფასი</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <p id="totalPrice">თავდაპირველი ფასი: 0</p>
+
+    <script>
+        const tbody = document.querySelector("tbody");
+        const p = document.querySelector("p");
+        const products = [];
+        let idCounter = 1; // უნიკალური ID გენერატორი
+        const createTr = (id, name, quantity, price) => {
+            const tr = document.createElement("tr");
+            tr.setAttribute("data-id", id); // ვიყენებთ data-id-ს იდენტიფიკაციისთვის
+            const idTd = document.createElement("td");
+            idTd.textContent = id;
+            const nameTd = document.createElement("td");
+            nameTd.textContent = name;
+            const quantityTd = document.createElement("td");
+            quantityTd.textContent = quantity;
+            const priceTd = document.createElement("td");
+            priceTd.textContent = price;
+            tr.appendChild(idTd);
+            tr.appendChild(nameTd);
+            tr.appendChild(quantityTd);
+            tr.appendChild(priceTd);
+            return tr;
+        }
+        function prompt_() {
+            const name = prompt("შეიყვანეთ პროდუქტის სახელი");
+            const quantity = parseInt(prompt("რაოდენობა"));
+            const price = parseFloat(prompt("ფასი"));
+            if (!name || !quantity || !price) {
+                alert("ყველა ველი სავალდებულოა!");
+                return;
+            }
+            const id = idCounter++;
+            const product = { id, productName: name, productQuantity: quantity, productPrice: price };
+            products.push(product);
+
+            tbody.appendChild(createTr(id, name, quantity, price));
+            updateTotalPrice();
+        }
+        function deleteProduct() {
+            const idToDelete = parseInt(prompt("შეიყვანეთ წასაშლელი პროდუქტის ID"));
+
+            const index = products.findIndex(p => p.id === idToDelete);
+            if (index === -1) {
+                alert("პროდუქტი მითითებული ID-ით ვერ მოიძებნა.");
+                return;
+            }
+            products.splice(index, 1); // წაშლა მასივიდან
+            // წაშლა ცხრილიდან
+            const rowToDelete = document.querySelector(`tr[data-id="${idToDelete}"]`);
+            if (rowToDelete) {
+                rowToDelete.remove();
+            }
+            updateTotalPrice();
+        }
+        function updateTotalPrice() {
+            const total = products.reduce((sum, p) => sum + p.productQuantity * p.productPrice, 0);
+            p.textContent = `სულ ფასი: ${total}`;
+        }
+    </script>
+</body>
+
+</html>

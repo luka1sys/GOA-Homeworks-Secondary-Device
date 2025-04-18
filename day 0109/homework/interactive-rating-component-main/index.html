@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <img src="images/icon-star.svg" alt="" width="20px">
+    <h2> How did we do?</h2>
+    <p>Please let us know how we did with your support<br> request. All feedback is appreciated
+      to help us<br> improve our offering!</p>
+    <section>
+      <button onclick="select(1)" class="bt">1</button>
+      <button onclick="select(2)" class="bt">2</button>
+      <button onclick="select(3)" class="bt">3</button>
+      <button onclick="select(4)" class="bt">4</button>
+      <button onclick="select(5)" class="bt">5</button>
+    </section>
+    <button id="btnn"> <a href="index2.html">S U B M I T</a></button>
+    <script>
+      function select(number) {
+        localStorage.setItem("select", number);
+        
+
+      }
+    </script>
+  </main>
+  </div>
+</body>
+
+</html>

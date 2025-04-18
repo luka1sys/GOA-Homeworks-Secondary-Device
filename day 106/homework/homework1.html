@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- დოკუმენტის კოდირების ტიპი -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- რესპონსივისთვის საჭირო -->
+    <title>Document</title> <!-- ფანჯრის სათაური -->
+</head>
+
+<body>
+    <!-- ღილაკი, რომლის დაჭერისას გაიხსნება prompt-ები -->
+    <button onclick="prompt_()">click</button>
+
+    <!-- ცხრილი, სადაც დაემატება პროდუქტის მონაცემები -->
+    <table id="productTable" border="1">
+        <thead>
+            <tr>
+                <th>პროდუქტის სახელი</th>
+                <th>რაოდენობა</th>
+                <th>ფასი</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- პროდუქტების მონაცემები დაემატება აქ -->
+        </tbody>
+    </table>
+
+    <!-- პარაგრაფი, სადაც დაიწერება ჯამი -->
+    <p id="totalPrice">თავდაპირველი ფასი:0</p>
+    <script>
+        // ვიღებთ წვდომას ღილაკზე 
+        const btn = document.querySelector("button");
+
+        // ვიღებთ წვდომას ცხრილზე 
+        const tbody = document.querySelector("tbody");
+
+        // ვიღებთ წვდომას პარაგრაფზე 
+        const p = document.querySelector("p");
+
+        // ვქმნით მასივს რომ შევინახოთ პროდუქტი 
+        const products = [];
+
+        // ფუნქცია, რომელიც ქმნის ახალ <tr> ელემენტს გადაცემული მონაცემებით
+        const createTr = (productName, productQuantity, productPrice) => {
+            const newTr = document.createElement("tr"); // ახალი row
+            const nameTd = document.createElement("td"); // name-ს column
+            nameTd.textContent = productName;
+
+            const quantityTd = document.createElement("td"); // რაოდენობის 
+            quantityTd.textContent = productQuantity;
+
+            const priceTd = document.createElement("td"); // ფასის 
+            priceTd.textContent = productPrice;
+
+            // სამივე <td> ვამატებთ <tr>-ში
+            newTr.appendChild(nameTd);
+            newTr.appendChild(quantityTd);
+            newTr.appendChild(priceTd);
+
+            return newTr; // ვაბრუნებთ დასრულებულ row-ს
+        }
+
+        // ღილაკზე click-ის მოვლენა
+        btn.addEventListener("click", () => {
+            // ვთხოვთ მომხმარებელს შეიყვანოს პროდუქტის სახელი
+            const productName = prompt("Please enter product name");
+
+            // ვთხოვთ რაოდენობას და ვაქცევთ რიცხვად
+            const productQuantity = parseInt(prompt("Please enter product quantity"));
+
+            // ვთხოვთ ფასს და ვაქცევთ ათწილად
+            const productPrice = parseFloat(prompt("Please enter product price"));
+
+            // ვამატებთ პროდუქტს მასივში
+            products.push({ productName, productQuantity, productPrice });
+
+            // თუ რომელიმე მონაცემი არასწორია ან ცარიელია — ვაჩვენებთ შეცდომას
+            if (productName.length === 0 || !productQuantity || !productPrice) {
+                alert("Please fill all fields");
+                return; // შეწყვიტოს დანარჩენი კოდის შესრულება
+            }
+
+            // ჯამური ღირებულების გამოთვლა: თითოეულის ფასი * რაოდენობა და ჯამი
+            const totalPrice = products.reduce((prev, cur) =>
+                prev + cur.productPrice * cur.productQuantity, 0);
+
+            // განახლებული ფასი ვწერთ პარაგრაფში
+            p.textContent = `Total Price: ${totalPrice}`;
+
+            // ცხრილს ვამატებთ ახალ row-ს
+            tbody.appendChild(createTr(productName, productQuantity, productPrice))
+        })
+    </script>
+</body>
+
+</html>

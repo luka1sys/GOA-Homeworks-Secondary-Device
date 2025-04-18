@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function GeorgianDate(dateString) {
+            const Georgian = [
+                "კვირა",
+                "ორშაბათი",
+                "სამშაბათი",
+                "ოთხშაბათი",
+                "ხუთშაბათი",
+                "პარასკევი",
+                "შაბათი"
+            ];
+            const date = new Date(dateString);
+            const dayIndex = date.getDay(); // 0 - კვირა, 1 - ორშაბათი, ..., 6 - შაბათი
+            return Georgian[dayIndex];
+        }
+        console.log(GeorgianDate("2022-11-12"))
+    </script>
+</body>
+</html>

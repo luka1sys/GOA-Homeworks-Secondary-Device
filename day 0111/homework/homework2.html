@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="todo-box">
+        <h2>ჩემი საქმეები</h2>
+        <button onclick="addTask()">დამატება</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script>
+        function addTask() {
+            const task = prompt("შეიყვანე დავალება:");
+            if (task && task.trim() !== "") {
+                const ul = document.getElementById("taskList");
+                const li = document.createElement("li");
+                li.textContent = task;
+                const btn = document.createElement("button");
+                btn.textContent = "X";
+                btn.onclick = () => ul.removeChild(li);
+                li.appendChild(btn);
+                ul.appendChild(li);
+            } else {
+                alert("გთხოვ, შეიყვანე სწორი ტექსტი.");
+            }
+        }
+    </script>
+</body>
+</html>
+</html>

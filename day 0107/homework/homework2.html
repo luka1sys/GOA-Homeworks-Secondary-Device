@@ -1,0 +1,42 @@
+
+<!-- ### ✅ დავალება 1: "დაბადების დღის გამოთვლა"
+**ამოცანა**: მომხმარებელს შეყავს დაბადების თარიღი ფორმატში `"YYYY-MM-DD"`. დაწერე ფუნქცია, 
+რომელიც დააბრუნებს:
+- რამდენი წელი აქვს ამ ადამიანს,
+- შემდეგი დაბადების დღემდე რამდენი დღე დარჩა.<!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateBirthdayInfo(birthDateString) {
+    const today = new Date();
+    const birthDate = new Date(birthDateString);
+    // ასაკის გამოთვლა
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const thisYearBirthday = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+    // თუ დაბადების დღე ჯერ არ დამდგარა, ასაკი 1 წლით ნაკლებია
+    if (today < thisYearBirthday) {
+      age--;
+    }
+    // შემდეგი დაბადების დღის პოვნა
+    let nextBirthday = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+    if (today >= nextBirthday) {
+      nextBirthday.setFullYear(today.getFullYear() + 1);
+    }
+    // დარჩენილი დღეების გამოთვლა
+    const msPerDay = 1000 * 60 * 60 * 24;
+    const daysUntilNextBirthday = Math.ceil((nextBirthday - today) / msPerDay);
+    return {
+      age,
+      daysUntilNextBirthday
+    };
+  }
+console.log(calculateBirthdayInfo("2013-6-1"))
+    </script>
+    
+</body>
+</html>

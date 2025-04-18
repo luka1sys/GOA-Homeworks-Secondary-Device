@@ -1,0 +1,51 @@
+<!-- საიტზე გამოიტანეთ 3 ღილაკი, start pause და reset, როდესაც დავაკლიკებთ 
+   
+  start უნდა დაიწყოს დროის ათვლა, როდესაც დავაწკაპებთ pause უნდა დაპაუზდეს ხოლო როდესაც 
+  დავაწკაპებთ reset დრო უნდა დაბრუდნდეს ისევ 0 ზე, ამჟამინდელი გასული წამი უნდა იცვლებოდეს საიტზე -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="tm">0</div>
+    <button onclick="start1()">Start</button>
+    <button onclick="pause1()">Pause</button>
+    <button onclick="reset1()">Reset</button>
+
+
+    <script>
+        seconds = 0;
+        interval=10;
+        function update() {
+            document.getElementById('tm').textContent = seconds;
+        };
+
+
+        function start1() {
+            if (interval ===10) { 
+                interval = setInterval(() => { 
+                    seconds++; 
+                    update();
+                }, 1000);
+            }
+        }
+
+        function pause1() {
+            clearInterval(interval);
+            interval = 10;
+        }
+
+        function reset1() {
+            pause1(); 
+            seconds =0; 
+            update(); 
+        }
+    </script>
+</body>
+
+</html>

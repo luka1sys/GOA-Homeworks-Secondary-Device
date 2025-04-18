@@ -1,0 +1,37 @@
+<!-- მომხმარებელს შემოატანინეთ prompt ის მეშვეობით დრო წამებში მაგ: 10,
+  შემდეგ გამოიყენეთ setInterval რომ შექმნათ ტაიმერი, როდესაც გასული 
+  წამების რაოდენობა გაუტოლდება მომხმარტებლის მიერ შემოტანილ დროს, 
+  უნდა გაითიშოს, შენიშვნა შემოტანილი დრო ერთ წუთს არ უნდა აღემატებოდეს -->
+
+
+
+  <!-- საიტზე გამოიტანეთ 3 ღილაკი, start pause და reset, როდესაც დავაკლიკებთ 
+   
+  start უნდა დაიწყოს დროის ათვლა, როდესაც დავაწკაპებთ pause უნდა დაპაუზდეს ხოლო როდესაც 
+  დავაწკაპებთ reset დრო უნდა დაბრუდნდეს ისევ 0 ზე, ამჟამინდელი გასული წამი უნდა იცვლებოდეს საიტზე -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        seconds=0
+        let time=parseInt(prompt("enter time: "))
+        const id =setInterval(function(){
+            if(seconds===time){
+                clearInterval(id);
+            }
+            else{
+            seconds++;
+            console.log(seconds);
+        };
+        },1000)
+    </script>
+    
+</body>
+</html>

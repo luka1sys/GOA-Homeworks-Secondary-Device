@@ -1,0 +1,29 @@
+<!--  დავალება 1: ღილაკზე დაჭერით ელემენტის დამატება
+დონე: მარტივი
+აღწერა:
+შექმენი ღილაკი, რომელზე დაჭერისას გვერდზე ჩნდება ახალი პარაგრაფი (მაგ. "ახალი ელემენტი დამატებულია").
+ფუნქციონალი:
+დინამიკური HTML ელემენტების შექმნა JavaScript-ით
+DOM-თან მუშაობა-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="addParagraph()">add</button>
+    <script>
+        function addParagraph() {
+            const newParagraph = document.createElement("p");
+            newParagraph.textContent = "I am the best";
+            document.body.appendChild(newParagraph)
+        }
+    </script>
+
+</body>
+
+</html>

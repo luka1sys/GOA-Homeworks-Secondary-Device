@@ -1,0 +1,31 @@
+<!-- შექმენით ფორმა, სადაც გექნებათ 1 input,
+  როდესაც ფორმა დადასტურდება (ფორმაზე მოუსმენით submit მოვლენას),
+   მოხმარებლის მიერ ჩაწერილი ტექსტი წამოიღეთ ინფუთიდან და დაბეჭდეთ კონსოლშ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="form_">
+        <input type="text" id="userInput" placeholder="გთხოვთ, შეიყვანოთ ტექსტი" required>
+        <button type="submit">დადასტურება</button>
+    </form>
+    <script>
+        const form = document.getElementById("form_");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const userInput = document.getElementById("userInput").value;
+            console.log( userInput); 
+        });
+    </script>
+</body>
+
+</html>
+
+</html>

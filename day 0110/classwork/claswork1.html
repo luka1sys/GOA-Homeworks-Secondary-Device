@@ -1,0 +1,48 @@
+<!--  შემქენით დაულაგებელი სია html, მიანიჭეთ მას id და აირჩიეთ ეგ სია getElementByIdის
+   მეშვეობით, შემდეგ შექმენით ღილაკი, რომელზეც დაწკაპების შედეგად უნდა გამოიძახოთ promptფუნქცია,
+    სადაც მომხმარებელს შემოატანინებთ პროდუქტის სახელს, საბოლოოდ createElement მეთოდის გამოყენებით
+     შექმენით ახალი li თეგი, რომელშიც ჩასვამთ მომხმარებლის მიერ შემოტანილ ტექსტს და appendChild დაამატეთ 
+     li თეგი სიაში -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>product list </title>
+    </head>
+
+    <body>
+
+        <h2>my product:</h2>
+        <ul id="product-list">
+        </ul>
+        <button onclick="addProduct()">add product</button>
+        <script>
+            const list = document.getElementById("product-list"); // მივწვდით სიას
+            function addProduct() {
+                const productName = prompt("შეიყვანე პროდუქტის სახელი:");
+                if (productName) {
+                    const newItem = document.createElement("li");
+                    newItem.textContent = productName; 
+                    list.appendChild(newItem); 
+                }
+            }
+        </script>
+
+    </body>
+
+    </html>
+
+
+</body>
+
+</html>

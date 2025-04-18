@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #carousel{
+            width: 500px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .even {
+            color: blue;
+            background-color: rgb(0, 0, 0);
+        }
+        .odd {
+            color: red;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+    <div id="carousel"></div>
+    <script>
+
+        let number = 0;
+        const carouselDiv = document.getElementById('carousel');
+
+        function updateCarousel() {
+            carouselDiv.classList.remove('even', 'odd');
+            carouselDiv.textContent = number;
+            if (number % 2 === 0) {
+                carouselDiv.classList.add('even');
+            } else {
+                carouselDiv.classList.add('odd');
+            }
+            number = (number + 1) % 10;
+        }
+        updateCarousel();
+        setInterval(updateCarousel, 3000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!-- შექმენიტ html ფაილი სადაც გექნებათ 3 პარაგრაფი,
+  აირჩიეთ პირველი პარაგრაფი და შეცვალეთ მისი ტექსტის შიგთავსი და მისი id, 
+  მეორე პარაგრაფში შეცვალეთ მისი უკანაფერი და class, 
+  ხოლო მესამე პარაგრაფში დაამატეთ b თეგი ხოლო b თეგში კი რაიმე ტექსტი -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">oh bro you are the best</p>
+    <p class="p2">my name is luka</p>
+    <p id="p3">Is JavaScript difficult?</p>
+    <script>
+        let change1=document.getElementById("p1");
+        change1.textContent="Oh bro you are strong.";
+        change1.id="pp1"
+
+        let change2=document.querySelector(".p2")
+        change2.style.backgroundColor = "lightblue";
+        change2.className="pp2"
+
+        let change3=document.getElementById("p3");
+        const btag = document.createElement("b");
+        btag.textContent="No, I eat JavaScript.";
+        change3.appendChild(btag);
+    </script>
+</body>
+</html>

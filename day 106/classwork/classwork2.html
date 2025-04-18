@@ -1,0 +1,65 @@
+<!--  შექმენით ღილაკი, რომელზეც დაკლიკების შედეგად გამოჩნდება 3 შესატანი ველი prompt მეშვეობით, 
+  პირველში მომხმარებელმა უნდა შეიტანოს პროდუქტის სახელი, 
+  მეორეში უნდა შეიტანოს რაოდენობა და მესამეში უნდა შეიტანოს ფასი,
+   როდენობა და ფასი უნდა გარდაქმნათ რიცხვებად, შემოტანილი მნიშვნელობებით შექმენით ახალი tr ახალი 3 td თეგით,
+    რომელშიც დაამატებთ რიგრიგობით  სახელს, 
+    რაოდენობას და ფასს, ცხრილის ქვემოთ უნდა იყოს პარაგრაფი
+     რომელშიც წერია Total Price სადაც უნბდა ჩასვათ ყოველ ახალი პროდუქტის 
+     დამატების შემდეგ მთლიანი პროდუქტების ღირებულება-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="prompt_()">click</button>
+    <table id="productTable" border="1">
+        <thead>
+            <tr>
+                <th>პროდუქტის სახელი</th>
+                <th>რაოდენობა</th>
+                <th>ფასი</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <p id="totalPrice">თავდაპირველი ფასი:0</p>
+    <script>
+        const btn = document.querySelector("button");
+        const tbody = document.querySelector("tbody");
+        const p = document.querySelector("p");
+        const products = [];
+        const createTr = (productName, productQuantity, productPrice) => {
+            const newTr = document.createElement("tr");
+            const nameTd = document.createElement("td");
+            nameTd.textContent = productName;
+            const quantityTd = document.createElement("td");
+            quantityTd.textContent = productQuantity;
+            const priceTd = document.createElement("td");
+            priceTd.textContent = productPrice;
+            newTr.appendChild(nameTd);
+            newTr.appendChild(quantityTd);
+            newTr.appendChild(priceTd);
+            return newTr;
+        }
+        btn.addEventListener("click", () => {
+            const productName = prompt("Please enter product name");
+            const productQuantity = parseInt(prompt("Please enter product quantity"));
+            const productPrice = parseFloat(prompt("Please enter product price"));
+            products.push({ productName, productQuantity, productPrice });
+            if (productName.length === 0 || !productQuantity || !productPrice) {
+                alert("Please fill all fields");
+                return;
+            }
+            const totalPrice = products.reduce((prev, cur) => prev + cur.productPrice * cur.productQuantity, 0);
+            p.textContent = `Total Price: ${totalPrice}`;
+            tbody.appendChild(createTr(productName, productQuantity, productPrice))
+        })
+    </script>
+</body>
+</html>

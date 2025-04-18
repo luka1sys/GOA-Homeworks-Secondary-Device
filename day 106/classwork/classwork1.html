@@ -1,0 +1,23 @@
+<!--  შექმენით ღილაკი და მოუსმინეთ დაკლიკების მოვლენას, script თეგებში,
+   შექმენით ფუნქცია სახელად counter და აგრეთვე ფუნქცის ზემოთ ცვლადი სახელად count, 
+   როდესაც ღილაკზე მოხდება დაკლიკება უნდა გაეშვას counter ფუნქცია და დააპლიუსოს count ცვლადი,
+    აგრეთვე დაბეჭდეთ ამჟამინდელი count ცვლადის მნიშვნელობა, კონსოლში -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="counter()">bumm</button>
+    <p id="p"></p>
+    <script>
+        count=0
+        function counter(){
+            count++
+            console.log(count)
+        }
+    </script>
+</body>
+</html>

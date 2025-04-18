@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="index2.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <img src="images/illustration-thank-you.svg" alt="" width="130px">
+    <div id="dvd">
+      <p id="p1"> You selected <span id="selected-number"></span> out of 5</p>
+    </div>
+
+    <h2> Thank you!</h2>
+    <p id="p2"> We appreciate you taking the time to give a rating.<br> If you ever need more support,
+      don’t hesitate to <br> get in touch!</p>
+  </main>
+  </div>
+  <script>
+    const number = localStorage.getItem("select");
+    document.getElementById("selected-number").textContent = number;
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!-- დავალება 2: შემთხვევითი ციტატების გენერატორი
+დონე: მარტივი/საშუალო
+აღწერა:
+შექმენი ღილაკი "მიჩვენე ციტატა", რომელზე დაჭერისას ეკრანზე ჩანს შემთხვევითი ციტატა შენახული სიიდან.
+ფუნქციონალი:
+მასივი ციტატებით
+Math.random() გამოყენება
+DOM update
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p></p>
+    <button onclick="randomQuote()">Show me the quote.</button>
+
+
+    <script>
+        const quotes = [
+            "დიდი მიზნები იწყება ერთი პატარა ნაბიჯით.",
+            "შეცდომები მხოლოდ გამოცდილებაა, თუ მათგან სწავლობ.",
+            "დღეს ის დღეა, როცა შეგიძლია ყველაფერი შეცვალო.",
+            "ნუ დაელოდები შთაგონებას — იმოქმედე და შთაგონება მოვა.",
+            "საკუთარ თავში რწმენა არის პირველი ნაბიჯი წარმატებისკენ."
+        ];
+        function randomQuote(){
+            const random=Math.floor(Math.random()*quotes.length);
+            const randomIndex=quotes[random];
+            const pp=document.querySelector("p");
+            pp.textContent=randomIndex
+            
+            
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

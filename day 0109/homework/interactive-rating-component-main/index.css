@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #141519;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main{
+    position: relative;
+
+    width:350px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #1E252F;
+
+
+
+}
+main img{
+    position: absolute;
+    left: 30px;
+    top: 35px;
+}
+h2{
+    color: white;
+    margin-top: 80px;
+    margin-left: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+p{
+    color: rgb(99, 106, 116);
+    margin-left: 30px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+
+    width: 85%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.bt{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(151, 151, 151);
+    font-weight: 600;
+    background-color: rgb(38, 47, 56);
+    border: none;
+    cursor: pointer;
+}
+#btnn{
+    border: none;
+    width: 85%;
+    height: 42px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 25px;
+    background-color: rgb(252, 118, 19);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+}
+.bt:hover{
+    background-color:rgb(252, 118, 19);
+    color: black;
+}
+.bt:hover:active{
+    background-color: white;
+    color: black;
+}
+#btnn:hover{
+    background-color: white;
+}
+.bt:focus{
+    background-color: white;
+}
