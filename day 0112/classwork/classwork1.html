@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="loginForm">
+        <input type="text" id="email" placeholder="შეიყვანეთ Email">
+        <input type="password" id="password" placeholder="შეიყვანეთ პაროლი">
+        <button type="submit">დადასტურება</button>
+    </form>
+    <script>
+        const form = document.getElementById("loginForm");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            if (email === "" || password === "") {
+                alert("Please fill out all fields");
+                return;
+            }
+            if (!email.includes("@") || !email.includes(".")) {
+                alert("Please enter a valid email address");
+                return;
+            }
+            console.log(email);
+            console.log(password);
+            form.reset()
+
+        });
+
+    </script>
+</body>
+
+</html>
