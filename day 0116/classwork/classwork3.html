@@ -1,0 +1,45 @@
+<!-- User კლასში დაამატეთ ორი მეთოდი, პირველი გეთთერი რომელიც დააბრუნებს მომხმარებლის იმელს,
+  დაარქვთ email, ხოლო მეორეს დაარქვით password ის იქნება სეტერი, რომლის დახმარებითაც შეიცვლება პაროლი, 
+  პაროლის შეცვლადე შეამოწმეთ არის თუ არა ის 6 სიმბოლოზე მეტი და 20 სიმბოლოზე ნაკლი, აგრეთვე შეამოწმეთ 
+  შეიცავს თუ არა წერტილ, თუ ჩამოთვლილი დაკმაყოფილდება მიეცით სეტერს იმის საშუალება რომ შეცვლოს პაროლი,
+   სხვა შემთხვევაში გათიშეთ ის.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class User {
+            constructor(email, password, username) {
+                this._email = email;
+                this._password = password;
+                this._username = username;
+            }
+            get email() {
+                return this.email
+            }
+            set Password(newPassword) {
+                if (newPassword.length > 6 && newPassword.length < 20 && newPassword.includes(".")) {
+                    this.password = newPassword;
+                } else {
+                    console.log("Try again");
+                }
+            }
+        }
+        const user1 = new User("avbdak@gmail.com", "luksona", "luka");
+        const user2 = new User("sdkjbvak@gmail.com", "saba123", "saba");
+        const user3 = new User("uskvdbakdv@gmail.com", "nika123", "nika");
+        console.log(user1);
+        console.log(user2);
+        console.log(user3);
+    </script>
+
+</body>
+
+</html>

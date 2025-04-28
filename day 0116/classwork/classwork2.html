@@ -1,0 +1,42 @@
+<!-- შექმენით კლასი სახელად User , ამ კლასის კონსტრუქტორს უნდა გადავცეთ 3 მნიშვნელობა, 
+ email, password და username, დამატეთ ეს მნიშვნელობები ობიექტში, 
+ შემდეგ შექმენით საერთო მეთოდი სახელად introduce() რომელიც კონკრეტული ობიექტის იმეილს და უსერნეიმს დაბეჭდავს,
+  ახსენით კომენტარებთ რა არის კლასი, კონსტრუქტორი და პროტორიპი, ყველაზე კარგად დაუფიქრდით პროტოტიპს,
+   შემდეგ შექმენით კონკრუტელუ კლასით 3 სხვადასხვა მომხმარებელი და 3 ვე დაბეჭდეთ კონსოლში და შეამოწმეთ
+    რისგან შედგება ობიექტი -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class User {
+            constructor(email, password, username) {
+                this.email = email;
+                this.password = password;
+                this.username = username;
+            }
+            introduce() {
+                console.log(this.email, this.username)
+            }
+        }
+        const user1 = new User("avbdak@gmail.com", "luksona", "luka");
+        const user2 = new User("sdkjbvak@gmail.com", "saba123", "saba");
+        const user3 = new User("uskvdbakdv@gmail.com", "nika123", "nika");
+        console.log(user1);
+        console.log(user2);
+        console.log(user3);
+        //კლასს ვიყენებთ რომ შევქმნათ ობიექტები 
+        // კონსტრუქტორი მუშაობს იმისთცვის რომ შეიქმნას კლასის ახალი ობიექტები 
+        // პროტოტიპი ნიშნავს რომ ეს ყველა ობიექტი ინახება ერთ საერთო მეხსიერებაში 
+        
+    </script>
+
+</body>
+
+</html>

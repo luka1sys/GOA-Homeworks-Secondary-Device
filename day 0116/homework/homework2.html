@@ -1,0 +1,35 @@
+<!--  შექმენით რეგისტრაციის ფორმა სადაც მომხმარებელი, შემოიტანს თავის Name,Email,Password - ს 
+  თქვენი დავალებაა, რომ ამ ფორმას დაამატოთ ვალიდაცია, ღილაკზე დაჭერისას წამოიღოთ თითოეული
+   <input></input> თეგიდან ინფორმაცია, უნდა გქონდეთ ერთი Class - ი სახელად User{} - ი
+    სადაც თქვენ ჩაამატებთ ამ მომხმარებლის Name Email Password - ს (გამოიყენეთ constructor - ი 
+     რომელსაც არგუმენტად მიანიჭებთ (name,email,password) - ს) Class User{} - ში 
+     თქვენ უნდა გქონდეთ getter and setter - მეთოდები, უნდა გქონდეთ get name() - ი 
+     რომელიც დააბრუნებს მომხმარებლის სახელს, უნდა შექმნათ set password(newPass) რომელიც
+      შეამოწმებს პაროლს, შეამოწმეთ თუ პაროლი შეადგენს 4 - ზე მეტ სიმბოლოს, 
+      რაიმე რიცხვს ან აქვს პუნქტუაციის რომელიღაცა სიმბოლო მაშინ პაროლი განაახლეთ სხვა შემთხვევაში
+       კი უნდა გათიშოთ setter - ი. უნდა გქონდეთ users - მასივი სადაც თქვენ ჩაამატებთ მომხმარებლის
+        ინფორმაციას, Class User{} - ით შექმნილი ობიექტის მიხედვით შექმენით ერთი ცვლადი რომელშიც
+         შეინახავთ მომხარებლის ინფორმაციას new User() - ის გამოყენებით, შექმნილი ცვლადი უნდა ჩაამატოთ 
+         users - მასივში და საბოლოო შედეგი გამოიტანოთ console - ში-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form_">
+        <input id="name_" type="name" placeholder="enter name " required>
+        <input id="email_" type="email" placeholder="enter email" required>
+        <input  id="pass_" type="password" placeholder="enter password" required>
+        <button type="submit">submit</button>
+
+    </form>
+
+
+    <script src="homework2.js"></script>
+    
+</body>
+</html>
