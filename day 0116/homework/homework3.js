@@ -41,7 +41,6 @@ form.addEventListener("submit", function (e) {
 
     // ვბეჭდავთ მომხმარებლის სახელს კონსოლში
     console.log(newUser.name);
-
     // ვამატებთ მომხმარებელს users მასივში
     users.push(newUser);
 
