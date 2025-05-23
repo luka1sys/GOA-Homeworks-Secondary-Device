@@ -39,9 +39,8 @@ function render(productlist) {
     }
 }
 
-function renderCart() {
+ function renderCart() {
     cart.innerHTML = "";
-
     for (const item of cartList) {
         const productDiv = document.createElement("section");
         productDiv.style.backgroundColor = "gray";
