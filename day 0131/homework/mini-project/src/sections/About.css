@@ -1,0 +1,42 @@
+
+h1{
+    background-color: rgb(142, 142, 142);
+    display: inline;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
+
+}
+p{
+    background-color: gray;
+}
+a{
+    color: rgb(0, 0, 0);
+}
+#Contact{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-top: 10px;
+    width: 250px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    
+}
+#submit{
+    height: 40px ;
+    width: 258px;
+    background-color: rgb(171, 171, 171);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+#image_div{
+    display: flex;
+    gap: 10px;
+}
