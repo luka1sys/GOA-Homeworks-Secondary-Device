@@ -4,7 +4,6 @@ import { MovieForm } from "./presentational2";
 
 export const Container = () => {
   const [movie, setMovie] = useState(null);
-
   const fetchData = async (query) => {
     try {
       const response = await fetch(`https://www.omdbapi.com/?apikey=c761762c&t=${query}`);
@@ -14,7 +13,6 @@ export const Container = () => {
       console.log(err);
     }
   };
-
   return (
     <div>
       {movie && movie.Response !== "False" && (
