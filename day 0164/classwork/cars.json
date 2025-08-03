@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": 2020,
+    "color": "White",
+    "price": 12500,
+    "fuel": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "id": 2,
+    "brand": "BMW",
+    "model": "320i",
+    "year": 2019,
+    "color": "Black",
+    "price": 18500,
+    "fuel": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "id": 3,
+    "brand": "Mercedes-Benz",
+    "model": "C200",
+    "year": 2021,
+    "color": "Silver",
+    "price": 22000,
+    "fuel": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "id": 4,
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "year": 2018,
+    "color": "Blue",
+    "price": 9900,
+    "fuel": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "id": 5,
+    "brand": "Kia",
+    "model": "Sportage",
+    "year": 2022,
+    "color": "Red",
+    "price": 21000,
+    "fuel": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "id": 6,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2017,
+    "color": "Grey",
+    "price": 8700,
+    "fuel": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "id": 7,
+    "brand": "Audi",
+    "model": "A4",
+    "year": 2020,
+    "color": "Black",
+    "price": 24500,
+    "fuel": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "id": 8,
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "year": 2019,
+    "color": "White",
+    "price": 16500,
+    "fuel": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "id": 9,
+    "brand": "Honda",
+    "model": "Civic",
+    "year": 2021,
+    "color": "Blue",
+    "price": 15500,
+    "fuel": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "id": 10,
+    "brand": "Nissan",
+    "model": "X-Trail",
+    "year": 2023,
+    "color": "Green",
+    "price": 23000,
+    "fuel": "Hybrid",
+    "transmission": "Automatic"
+  }
+]
