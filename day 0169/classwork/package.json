@@ -1,0 +1,14 @@
+{
+  "name": "classwork",
+  "version": "1.0.0",
+  "main": "classwork1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lukaa",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

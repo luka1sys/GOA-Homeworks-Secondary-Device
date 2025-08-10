@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "laptop",
+    "price": 25.99,
+    "category": "Electronics",
+    "stock": 50,
+    "description": "Comfortable wireless mouse with long battery life",
+    "image": "mouse.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Gaming Keyboard",
+    "price": 59.99,
+    "category": "Electronics",
+    "stock": 30,
+    "description": "Mechanical RGB gaming keyboard with customizable keys",
+    "image": "keyboard.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Headphones",
+    "price": 79.99,
+    "category": "Electronics",
+    "stock": 20,
+    "description": "Noise-cancelling over-ear Bluetooth headphones",
+    "image": "headphones.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Smartwatch",
+    "price": 129.99,
+    "category": "Wearables",
+    "stock": 15,
+    "description": "Fitness tracking smartwatch with heart rate monitor",
+    "image": "smartwatch.jpg"
+  }
+]
