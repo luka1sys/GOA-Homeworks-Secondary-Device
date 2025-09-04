@@ -1,6 +1,5 @@
 const Post = require('../model/post.model');
 
-// GET all posts
 const getPost = async (req, res) => {
     try {
         const posts = await Post.find();
@@ -8,9 +7,8 @@ const getPost = async (req, res) => {
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
-};
+}; 
 
-// CREATE post
 const createPost = async (req, res) => {
     const { title, author, description } = req.body;
 
@@ -24,7 +22,6 @@ const createPost = async (req, res) => {
     }
 };
 
-// DELETE post
 const deletePost = async (req, res) => {
     try {
         const deletedPost = await Post.findByIdAndDelete(req.params.id);
@@ -35,7 +32,6 @@ const deletePost = async (req, res) => {
     }
 };
 
-// GET post by ID
 const getById = async (req, res) => {
     try {
         const post = await Post.findById(req.params.id);
@@ -46,13 +42,12 @@ const getById = async (req, res) => {
     }
 };
 
-// PATCH post
 const postChange = async (req, res) => {
     try {
         const updatedPost = await Post.findByIdAndUpdate(
             req.params.id,
             req.body,
-            { new: true } // დაბრუნებს უკვე განახლებულ ობიექტს
+            { new: true } 
         );
         if (!updatedPost) return res.status(404).json({ message: "Post not found" });
         res.json(updatedPost);
