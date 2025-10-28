@@ -17,7 +17,6 @@ app.get('/tours', (req, res) => {
   } else if (sorted === 'price b') {
     end.sort((a, b) => b.price - a.price); 
   }
-
   res.send(end);
 });
 
